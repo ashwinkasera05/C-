@@ -28,6 +28,6 @@ int main ()
 {
     C obj;
     obj.print();
-    obj.C::B::print();
+    obj.B::print();
     obj.C::print();
 }
