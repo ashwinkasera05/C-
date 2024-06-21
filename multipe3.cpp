@@ -22,7 +22,7 @@ class BlueWhale: public Mammals ,public MarineAnimals
     public:
     void whale()
     {
-        cout<<" I belong to both the categories :"<<endl;
+        cout<<" I belong to both the categories : Mammals as well as Marine Animal "<<endl;
     }
 };
 int main()
@@ -33,10 +33,10 @@ int main()
     ma.fish2();
     BlueWhale bw;
     bw.whale();
-    bw.fish();
-    bw.fish2();
-
-    return 0;
+    /*bw.fish2();
+    bw.fish();*/
+    
+        return 0;
 }
 
     
