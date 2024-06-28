@@ -11,7 +11,15 @@ class pattern
     cin>>r;
     cout<<"enter col :";
     cin>>c; 
-   for(i=1;i<=r;i++)
+     
+   }
+   friend int pattn(); 
+
+};
+int pattn()
+{
+    int r,c,i,j,k;
+    for(i=1;i<=r;i++)
    {
        if(i==1||i==r)
        {
@@ -38,13 +46,6 @@ class pattern
 
        }
    }
-     
-   }
-   friend int pattn(); 
-
-};
-int pattn()
-{
   return 0;   
 }
 

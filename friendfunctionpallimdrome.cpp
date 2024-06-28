@@ -3,39 +3,40 @@ using namespace std;
 class pallim
 {
     private:
-    int n, rev = 0, rem, a;
+    int n, rev = 0, rem,b;
     public:
-    pallim()
+    pallim(int n)
     {
-    cout<<"Enter an integer: ";
-    cin>>n;
-    a = n;
-    while (n != 0) 
+    /*cout<<"Enter an integer: ";
+    cin>>n;*/
+    b = n;
+    }
+    friend int pall(pallim p);
+};
+int pall(pallim p)
+{
+  int n, rev = 0, rem, b;
+  while (n != 0) 
        {
           rem = n % 10;
           rev = rev * 10 + rem;
           n /= 10;
        }
 
-    if (a == rev)
+    if (b == rev)
       {
-        cout<<"is a palindrome."<< a<<endl;
+        cout<<"is a palindrome."<<b<<endl;
       }
     else
       {
-        cout<<"is not a palindrome."<<a<<endl;
+        cout<<"is not a palindrome."<<b<<endl;
       }
     
-    }
-    friend int pall();
-};
-int pall()
-{
-    return 0;
+    return n;
 }
 int main ()
 {
-    pallim p1;
-    cout<<pall<<endl;
+    pallim p1(121);
+    cout<<pall(p1)<<endl;
     return 0;
 }
